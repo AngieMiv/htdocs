@@ -44,6 +44,48 @@
 		};
 		echo "12. La palabra \"$word\" tiene $vCount vocales.";
 		echo "<br />";
+
+		// 13. Potencia de 2 con bucle do-while. 5 1ºs potencias de 2
+		$base = 2;
+		$exponent = 1;
+		$count = 0;
+		echo "13. 5 primeras potencias de 2: ";	
+		do {
+			$power = pow($base, $exponent);
+			echo "$power, ";
+			$exponent++;
+			$count++;
+		} while ($count < 5);
+
+		// CON FUNCIONES 
+
+		// 14. Crea fx llamada "saludar" que reciba un nombre y devuelva un saludo personalizado"
+		function saludar($name) {
+			return "Henlo, $name! <br />";
+		};
+
+		// 15. Crea fx calcularCuadrado que reciba un número y devuelva su cuadrado
+		function calcularCuadrado($num) {
+			return $num * $num;
+		};
+
+		// 16. Crear fx clasificarNumero que reciba un número y devuelva si es positivo, negativo o cero
+		function clasificarNumero($num) {		
+			if ($num > 0) {
+				return "positivo";
+			} elseif ($num < 0) {
+				return "negativo";
+			} else {
+				return "cero";
+			};
+		};
+
+		// 17. Crear fx concatenarPalabras que reciba dos palabras y devuelva una cadena que las concatene
+		function concatenarPalabras($word1, $word2) {
+			return $word1 . " " . $word2;
+		};
+
 	?>
+
 </body>
 </html>
