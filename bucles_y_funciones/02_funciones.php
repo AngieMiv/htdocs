@@ -56,6 +56,8 @@
 			$exponent++;
 			$count++;
 		} while ($count < 5);
+		echo "<br />";
+
 
 		// CON FUNCIONES 
 
@@ -63,11 +65,14 @@
 		function saludar($name) {
 			return "Henlo, $name! <br />";
 		};
+		echo "14. " . saludar("Antonio");
 
 		// 15. Crea fx calcularCuadrado que reciba un número y devuelva su cuadrado
 		function calcularCuadrado($num) {
 			return $num * $num;
 		};
+		echo "15. El cuadrado de 4 es " . calcularCuadrado(4);
+		echo "<br />";
 
 		// 16. Crear fx clasificarNumero que reciba un número y devuelva si es positivo, negativo o cero
 		function clasificarNumero($num) {		
@@ -79,11 +84,17 @@
 				return "cero";
 			};
 		};
+		echo "16. El número -3 es " . clasificarNumero(-3);
+		echo "<br />";
+		echo "16. El número 0 es " . clasificarNumero(0);
+		echo "<br />";
+		echo "16. El número 5 es " . clasificarNumero(5);
 
 		// 17. Crear fx concatenarPalabras que reciba dos palabras y devuelva una cadena que las concatene
 		function concatenarPalabras($word1, $word2) {
 			return $word1 . " " . $word2;
 		};
+		echo "<br />17. " . concatenarPalabras("Bye", "World");
 
 	?>
 
